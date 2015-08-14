@@ -1,0 +1,515 @@
+@CHARSET "UTF-8";
+/*
+css главной страницы.
+Первое это формирование таблицы с круглыми краями.
+*/
+
+body { font-size: 12px; }
+
+.inv-content {
+	font-size: 12px;
+}
+
+input, optgroup, select, textarea {
+color: black;
+}
+
+.qrTrue, .qrFalse {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin: 0;
+        }
+        
+        .qrTrue {
+            background-color: black;
+        }
+        
+        #QRCode {
+            line-height: 0px;
+            font-size: 0px;
+        }
+/* 
+#v1 {
+  width: 100%;
+	margin: 30px auto 15px;
+}
+#v3 {
+  width: 180px;
+	margin: 30px auto 15px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#v3 h6 {color: #FF0000;}
+.text {
+	font-size: 12px;
+	background: #FCFCFC;
+	border: 1px solid #B0BCC2;
+	border-width: 0 1px;
+	padding: 5px 12px;
+}
+
+ 
+/* углы со сглаживанием 
+.b1, .b2, .b3, .b4, .b5,
+.b1 i, .b2 i, .b3 i, .b4 i, .b5 i,
+.b1 b, .b2 b, .b3 b, .b4 b, .b5 b,
+.b1 q, .b2 q, .b3 q, .b4 q, .b5 q {
+	height: 1px;
+	font-size: 1px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 0 1px;
+	display: block;
+	background: #FCFCFC;
+}
+.b1 {
+  margin: 0 2px;
+	background: #EBEEF0;
+	border: none;
+}
+.b1 b {
+ margin: 0 1px;
+ background: #B8C3C8;
+ border-color: #CBD3D7;
+}
+.b2 {margin: 0 1px;	border-color: #D6DCDF;}
+.b2 b {border-color: #B8C3C8;}
+.b2 i {border-color: #E4E8EA;}
+.b2 q {border-color: #F7F8F9;}
+.b3 {border-color: #EBEEEF;}
+.b3 b {border-color: #BCC6CB;}
+.b3 i {border-color: #F9FAFB;}
+.b4 {border-color: #CAD2D6;}
+.b4 b {border-color: #E5E9EB;}
+.b5 {border-color: #B5C0C6;}
+.b5 b {border-color: #FAFBFB;}
+/* углы со сглаживанием конец */
+
+/*Таблица где размещаются данный раздел категорию товары или услуги
+.tablica {width: 100%; height: 100%}
+.cinv-razdela{font-size: 12px; height: 35px; text-shadow: black 3px 3px 5px; background: #caffaf; padding: 10px;}
+
+
+
+/*button {
+background: #2E8CE3;
+padding: 2px;
+font-size: 13px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+border: solid 1px #73C8F0;
+cursor: pointer;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background: -moz-linear-gradient(0% 100% 90deg, #2E8CE3, #73C2FD);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#73C2FD), 
+to(#2E8CE3));
+box-shadow: inset 0 1px 0 0 #FFFFFF;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+border-bottom: 1px solid rgba(0,0,0,0.25); 
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+width:150px;
+height:25px
+}
+	
+button:hover { 
+background: #2E69E3; 
+background: -moz-linear-gradient(0% 100% 90deg, #2E69E3, #59C2FF);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#59C2FF), 
+to(#2E69E3));
+}
+
+button:active {
+background: #2E69E3; 
+background: -moz-linear-gradient(0% 100% 90deg, #2E69E3, #59C2FF);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#59C2FF), 
+to(#2E69E3));
+box-shadow: inset 1px 1px 0 0 #004A7F;
+-moz-box-shadow: inset 1px 1px 0 0 #004A7F;
+-webkit-box-shadow: inset 1px 1px 0 0 #004A7F;
+padding: 3px;
+}*/
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+#left-menu{
+	float: left;
+	width: 150px;
+	padding: 10px;	
+}
+
+#top-menu{
+	float: left;
+	padding: 5px;	
+}
+#top-logo{
+	float: right;
+	padding: 5px;	
+}
+
+
+
+#inv-worck{
+	padding-left: 10px;	
+	padding-right: 10px;
+}
+
+
+#inv-admin, #inv-reception, #inv-client, #inv-config, #doc-files{
+	display:none;
+	padding:5px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	border: 1px;
+	
+}
+#inv-addobject{
+	background: white;
+	border-radius: 10px;
+	display: none;
+	margin: 10px;
+	position: relative;
+	width: 400px;
+	padding: 10px;
+}
+
+#addpet-table td{
+	padding: 5px;
+}
+
+ #inv-reception-add{
+	background: white;
+	border-radius: 10px;
+	display: none;
+	margin: 10px;
+	position: relative;
+	width: 700px;
+	padding: 10px;
+}
+
+#addpet-table"{
+	padding: 10px;
+}
+
+
+#rec-table td, #rec-table td, #rec-table-2 td {
+	table-layout: auto;
+	
+	padding:5px;
+	border-color:black;
+}
+
+#table-rec-add td{
+	vertical-align: top;
+	table-layout: auto;
+	
+	padding:5px;
+	border-color:black;
+}
+#table-rec-add-td-left{
+	width: 400px;
+	background: #C2E0ED;
+	font-size: 11pt;
+	
+	
+}
+#table-rec-add-td-right{
+	width: 550px;
+}
+
+#table-rec-add-td-right textarea{
+	width: 400px;
+	
+}
+
+#rec-det-right{
+	width: 450px;
+	background: #C2E0ED;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+#rec-det-left{
+	width: 670px;
+	height: 100%;
+	float: left;
+
+}
+
+#inv-object-table textarea{
+	width: 300px;
+	height: 50px;	
+}
+#inv-object-table td{
+	padding: 5px;	
+}
+#inv-object-table-det td{
+	padding: 1px;	
+}
+#rec-det-left input{
+	width: 90px;	
+}
+
+.inv-object-table textarea{
+	width: 300px;
+	height: 50px;	
+}
+.inv-object-table td{
+	padding: 5px;	
+}
+.inv-object-table-det td{
+	padding: 1px;	
+}
+.rec-det-left input{
+	width: 90px;	
+}
+
+#center {
+	width:400px; /*Ширина блока*/
+    height:300px; /*Высота блока*/
+    margin:0 auto;
+    overflow:visible;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-200px; /*Смещаем блок на половину всей ширины влево*/
+    margin-top:-100px; /*Смещаем блок на половину высоты вверх*/
+}
+#inv-add-grid-type {
+	/*width:600px; 
+    margin:0 auto;
+    overflow:visible;
+    position:absolute;
+    left:50%;
+    margin-left:-300px; /*Смещаем блок на половину всей ширины влево*/
+}
+.inv-div-left{
+	float:left;
+	margin-right: 10px;
+}
+
+.comp-config{
+	width: 500px;
+}
+.comp-config-det{
+	width: 300px;
+}
+
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eee;
+}
+table {
+  width: 100%;
+  /*margin: 10px 0;*/
+}
+
+.fileupload-progress {
+	margin: 10px 0;
+}
+.fileupload-progress .progress-extended {
+	margin-top: 5px;
+}
+.error {
+  color: red;
+}
+
+@media (min-width: 481px) {
+  .navigation {
+    list-style: none;
+    padding: 0;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li:not(:first-child):before {
+    content: "| ";
+  }
+}
+
+.bottom-message{
+   background-color: #46A4CB;
+   width: 250px;
+   height: 60px;
+   right: 10px;
+   top: 10px;
+   position: absolute;
+   border-radius:5px ; 
+  -webkit-border-radius:5px ; 
+  -moz-border-radius:5px ;  
+   display: none;
+}
+.bottom-message:hover{
+    background-color: #6D7780;
+}
+.bottom-message p{
+   margin-top: 10px;
+   margin-bottom: 0;
+   margin-left: 10px;
+   color: white;
+   font: 13px;
+}
+.bottom-message a{
+  font: 12px;
+  color: white;
+  display: inline-block;
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+/* ALERTS */
+/* inspired by Twitter Bootstrap */
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #eed3d7;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0px;
+  right: 21px;
+  /* Each alert has its own width */
+  float: right;
+  clear: right;
+}
+
+.alert-red {
+  color: white;
+  background-color: #DA4453;
+}
+.alert-green {
+  color: white;
+  background-color: #37BC9B;
+}
+.alert-blue {
+  color: white;
+  background-color: #4A89DC;
+}
+.alert-yellow {
+  color: white;
+  background-color: #F6BB42;
+}
+.alert-orange {
+  color:white;
+  background-color: #E9573F;
+}
+
+/*** Overlay ***/
+#messagebox_overlay {
+	position			: fixed;
+	top					: 0px;
+	left				: 0px;
+	width				: 100%;
+	height				: 100%;
+	background-color	: rgba(255,255,255,0.6);
+}
+
+
+/*** Message Box Wrapper ***/
+#messagebox {
+	position			: fixed;
+	top					: -100%;
+	font-family			: verdana, arial, helvetica, sans-serif;
+	font-size			: 13px;
+	max-height			: 90%;
+	max-width			: 90%;
+	min-width			: 300px;
+	color				: #303030;
+	background-color	: #fcfcfc;
+	border				: 1px solid #c8c8c8;
+	box-shadow			: 0px 2px 4px #a0a0a0;
+	-mox-box-shadow		: 0px 2px 4px #a0a0a0;
+	-webkit-box-shadow	: 0px 2px 4px #a0a0a0;
+}
+
+
+/*** Content ***/
+#messagebox_content {
+	padding		: 20px;
+}
+	#messagebox_content_input {
+		color					: #303030;
+		border					: 1px solid #909090;
+		display					: block;
+		width					: 98%;
+		margin-left				: auto;
+		margin-right			: auto;
+		margin-top				: 10px;
+		padding					: 3px;
+		-webkit-box-sizing		: border-box;
+		-moz-box-sizing			: border-box;
+		box-sizing				: border-box;
+	}
+		#messagebox_content_input:hover {
+			border-color		: #707070;
+		}
+		#messagebox_content_input:focus {
+			border-color		: #707070;
+			box-shadow			: inset 0px 0px 3px #ffd540;
+			-mox-box-shadow		: inset 0px 0px 3px #ffd540;
+			-webkit-box-shadow	: inset 0px 0px 3px #ffd540;
+		}
+
+
+/*** Buttons ***/
+#messagebox_buttons {
+	background-color	: #f5f5f5;
+	border-top			: 1px solid #c8c8c8;
+	padding				: 10px 20px;
+	text-align			: center;
+}
+	#messagebox_buttons button {
+		font-family				: inherit;
+		font-size				: inherit;
+		font-weight				: bold;
+		text-align				: center;
+		min-width				: 60px;
+		margin					: 0px 4px;
+		padding					: 5px 10px;
+		cursor					: pointer;
+		color					: #404040;
+		background-color		: #e9e9e9;
+			background-image	:         linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.0) 100%);
+			background-image	:    -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.0) 100%);
+			background-image	: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.0) 100%);
+			background-image	:      -o-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.0) 100%);
+			background-image	:     -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.0) 100%);
+		border					: 1px solid #c0c0c0;
+		-webkit-border-radius	: 2px;
+		-moz-border-radius		: 2px;
+		border-radius			: 2px;
+	}
+		#messagebox_buttons button:hover {
+			color				: #202020;
+			background-color	: #f0f0f0;
+		}
+		#messagebox_buttons button:active {
+			background-color	: #e6e6e6;
+			border				: 1px solid #a0a0a0;
+			box-shadow			: inset 0px 0px 6px #d0d0d0;
+			-mox-box-shadow		: inset 0px 0px 6px #d0d0d0;
+			-webkit-box-shadow	: inset 0px 0px 6px #d0d0d0;
+		}
+		#messagebox_buttons button::-moz-focus-inner {
+			padding		: 0px;
+			border		: 0px;
+		}

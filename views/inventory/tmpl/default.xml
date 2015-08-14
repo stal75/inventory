@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Инвентаризация">
+		<message>Выбор задач инвентаризации</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="task"
+				type="list"
+				label="Задача"
+				description="Выберите задачу"
+				default="1"
+			>
+				<option value="inventory">Инвентаризация</option>
+				<option value="invadmin">Администрирование</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

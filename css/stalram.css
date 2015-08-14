@@ -1,0 +1,157 @@
+ 
+
+.tabbed {  
+ width: 100%;  
+  //margin: 50px auto;  
+}  
+
+.tabbed > input {  
+  display: none;  
+}  
+
+.tabbed > label {  
+  display: block;  
+  float: left;  
+  padding: 12px 20px;  
+  margin-right: 5px;  
+  cursor: pointer;  
+  transition: background-color .3s;  
+}  
+
+.tabbed > label:hover,  
+.tabbed > input:checked + label {  
+  background: #4EC6DE;  
+}  
+
+.tabs {  
+  clear: both;  
+  perspective: 600px; 
+  height: 400px; 
+}  
+
+.tabs > div {  
+  width: 99%;
+  //height: 500px;  
+  position: absolute;  
+  border: 2px solid #4EC6DE;  
+  padding: 10px 10px 10px;  
+  line-height: 1.4em;   
+  display:none; 
+}  
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),  
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),  
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),  
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
+#tab-nav-5:checked ~ .tabs > div:nth-of-type(5),
+#tab-nav-6:checked ~ .tabs > div:nth-of-type(6),
+#tab-nav-7:checked ~ .tabs > div:nth-of-type(7),
+#tab-nav-8:checked ~ .tabs > div:nth-of-type(8),
+#tab-nav-9:checked ~ .tabs > div:nth-of-type(9),
+#tab-nav-10:checked ~ .tabs > div:nth-of-type(10),
+#tab-nav-11:checked ~ .tabs > div:nth-of-type(11),
+#tab-nav-12:checked ~ .tabs > div:nth-of-type(12){  
+  display:block;  
+}
+
+
+@media screen and (max-width: 700px) {  
+  .tabbed { width: 400px }  
+  .tabbed > label { display: none }  
+  .tabs > div {  
+  //width: 400px;  
+  border: none;  
+  padding: 0;  
+  position: relative;  
+  margin-bottom: 60px;  
+  }  
+  .tabs > div h2 {  
+  border-bottom: 2px solid #4EC6DE;  
+  padding-bottom: .5em;  
+  }  
+}
+
+
+
+#v1 {
+  width: 100%;
+	margin: 30px auto 15px;
+}
+#v3 {
+  width: 180px;
+	margin: 30px auto 15px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#v3 h6 {color: #FF0000;}
+.text {
+	font-size: 12px;
+	background: #FCFCFC;
+	border: 1px solid #B0BCC2;
+	border-width: 0 1px;
+	padding: 5px 12px;
+}
+
+ 
+/* углы со сглаживанием */
+.b1, .b2, .b3, .b4, .b5,
+.b1 i, .b2 i, .b3 i, .b4 i, .b5 i,
+.b1 b, .b2 b, .b3 b, .b4 b, .b5 b,
+.b1 q, .b2 q, .b3 q, .b4 q, .b5 q {
+	height: 1px;
+	font-size: 1px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 0 1px;
+	display: block;
+	background: #FCFCFC;
+}
+.b1 {
+  margin: 0 2px;
+	background: #EBEEF0;
+	border: none;
+}
+.b1 b {
+ margin: 0 1px;
+ background: #B8C3C8;
+ border-color: #CBD3D7;
+}
+.b2 {margin: 0 1px;	border-color: #D6DCDF;}
+.b2 b {border-color: #B8C3C8;}
+.b2 i {border-color: #E4E8EA;}
+.b2 q {border-color: #F7F8F9;}
+.b3 {border-color: #EBEEEF;}
+.b3 b {border-color: #BCC6CB;}
+.b3 i {border-color: #F9FAFB;}
+.b4 {border-color: #CAD2D6;}
+.b4 b {border-color: #E5E9EB;}
+.b5 {border-color: #B5C0C6;}
+.b5 b {border-color: #FAFBFB;}
+/* углы со сглаживанием конец */
+
+/*“аблица где размещаютс€ данный раздел категорию товары или услуги*/
+.tablica {width: 100%; height: 100%}
+.cvet-razdela{font-size: 12px; height: 35px; text-shadow: black 3px 3px 5px; background: #caffaf; padding: 10px;}
+
+#com_sprav_hdr{
+	position:static;
+	float:left;
+	align=center;
+}
+
+#com_sprav_img{
+	position:static;
+	float:right;
+}
+
+#com_sprav_form{
+	position:static;
+	float:left;
+}

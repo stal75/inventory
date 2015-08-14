@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Телемеханника">
+		<message>Выбор задач телемеханника</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="task"
+				type="list"
+				label="Задача"
+				description="Выберите задачу"
+				default="1"
+			>
+				<option value="tm">Телемеханника</option>
+				<option value="tmsprav">Справочник</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
